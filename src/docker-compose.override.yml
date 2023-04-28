@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+    sqlserverdb:
+        container_name:  sqlserverdb
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_SA_PASSWORD=Pasword123!
+        restart: unless-stopped
+        volumes:
+            - sqlserver_data:/var/lib/sqlserver/data
+        ports:
+            - "1435:1433"

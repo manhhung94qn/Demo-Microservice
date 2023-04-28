@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+    sqlserverdb:
+        image: mcr.microsoft.com/mssql/server:2019-latest
+
+
+networks:
+    default:
+        name: learn-microservice
+        driver: bridge
+
+
+volumes:
+    sqlserver_data:
+        name: sqlserver_data
