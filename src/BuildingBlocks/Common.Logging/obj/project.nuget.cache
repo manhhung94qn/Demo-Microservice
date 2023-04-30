@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hD2nV2/MhBaTTDoUN+1ZzmxyFZU2ZhK5tTgkuH1puNtzm/FlpOGluMPk2T0wm1/naB/sRM/EemmJIBDqBKCdQw==",
+  "dgSpecHash": "j9OUHA3Y8Za4QrQhuu2IIpleXqXUA79rhXiyk/meNo3aLfO6hfj9iaqjYF2na5rIy8i+jERRmWUBz+8p3qKj4w==",
   "success": true,
-  "projectFilePath": "D:\\Code\\Demo-Microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
+  "projectFilePath": "D:\\Projects\\Demo-Microservice\\src\\BuildingBlocks\\Common.Logging\\Common.Logging.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

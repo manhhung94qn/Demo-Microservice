@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jUL6XEx1sFsJpe/SzhmVNe3zY9x+JURU+ZhkxIjFaHkKSGw9CIh6iNckdpVwsCU9xgxCLe3PJLviaeU0/NTPnw==",
+  "dgSpecHash": "jgGFZqakMridswGn1B9zNwstQYrRJuLjfxvV2e/ojAN+hJDQRdcSsaHGROaQRhu5Gu1Egv/eW3ZdGJC1l/w/6g==",
   "success": true,
-  "projectFilePath": "D:\\Code\\Demo-Microservice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
+  "projectFilePath": "D:\\Projects\\Demo-Microservice\\src\\BuildingBlocks\\EventBus.Messages\\EventBus.Messages.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

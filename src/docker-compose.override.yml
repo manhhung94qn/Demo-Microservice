@@ -1,13 +1,84 @@
 version: '3.9'
 
 services:
-    sqlserverdb:
-        container_name:  sqlserverdb
+    #sqlserver
+    orderdb:
+        container_name:  orderdb
         environment:
             - ACCEPT_EULA=Y
             - MSSQL_SA_PASSWORD=Pasword123!
         restart: unless-stopped
         volumes:
-            - sqlserver_data:/var/lib/sqlserver/data
+            - order_data:/var/lib/sqlserver/data
         ports:
             - "1435:1433"
+    
+    #mysql
+    productdb:
+        container_name: productdb
+        environment:
+            - MYSQL_ROOT_PASSWORD=Pasword123!
+        restart: unless-stopped
+        volumes:
+            - product_data:/var/lib/mysql
+        ports:
+            - "3306:3306"
+
+    #postgress
+    customerdb:
+        container_name: customerdb
+        environment:
+            - POSTGRES_PASSWORD=Pasword123!
+            - POSTGRES_USER=admin
+            - POSTGRES_DB=Customerdb
+        restart: unless-stopped
+        volumes:
+            - customer_data:/var/lib/postgresql/data
+        ports:
+            - "5433:5432"
+
+    #redis
+    basketdb:
+        container_name: basketdb
+        restart: unless-stopped
+        ports:
+            - "6378:6379"
+
+    #Mongodb
+    inventorydb:
+        container_name: inventorydb
+        restart: unless-stopped
+        ports:
+            - "27017:27017"
+        volumes:
+            - inventory_data:/data/db
+
+    #infrastructure session
+    rabbitmq:
+        container_name: rabbitmq
+        restart: unless-stopped
+        ports:
+            - "5672:5672"
+            - "15672:15672"
+
+    elasticsearch:
+        container_name: elasticsearch
+        restart: unless-stopped
+        ports:
+            - "9200:9200"
+            - "9300:9300"
+        environment:
+            - discovery.type=single-node
+        volumes:
+            - elasticsearch_data:/usr/share/elasticsearch/data
+
+    kibana:
+        container_name: kibana
+        environment:
+            ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+        depends_on:
+            - elasticsearch
+        ports:
+            - "5601:5601"
+        
+    

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PDGGlDXkw9tIAKYiJ1n19YwDaszE7zn6ZMMJ3dlOKvBSW5MSvMch7P7eNR/4zAOclk5iNT1tMJK/7rW/QpLxOQ==",
+  "dgSpecHash": "Mj6qF7w20gXBO39GtNd9Wn+B2vb0nL0IPgIbm682BiZXlfBEKmuYnMNRMf01J2BkF7KMTxAHg/q7XAKgr8yP+A==",
   "success": true,
-  "projectFilePath": "D:\\Code\\Demo-Microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\Projects\\Demo-Microservice\\src\\BuildingBlocks\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

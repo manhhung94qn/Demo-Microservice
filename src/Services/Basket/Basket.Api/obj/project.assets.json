@@ -224,19 +224,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\manhh\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\Demo-Microservice\\src\\Services\\Basket\\Basket.Api\\Basket.Api.csproj",
+      "projectUniqueName": "D:\\Projects\\Demo-Microservice\\src\\Services\\Basket\\Basket.Api\\Basket.Api.csproj",
       "projectName": "Basket.Api",
-      "projectPath": "D:\\Code\\Demo-Microservice\\src\\Services\\Basket\\Basket.Api\\Basket.Api.csproj",
-      "packagesPath": "C:\\Users\\manhh\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\Demo-Microservice\\src\\Services\\Basket\\Basket.Api\\obj\\",
+      "projectPath": "D:\\Projects\\Demo-Microservice\\src\\Services\\Basket\\Basket.Api\\Basket.Api.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Demo-Microservice\\src\\Services\\Basket\\Basket.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\manhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -244,7 +244,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/symphonyvsts/_packaging/nuget-feed/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -286,7 +287,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

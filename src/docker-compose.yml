@@ -1,16 +1,64 @@
 version: '3.9'
 
 services:
-    sqlserverdb:
+
+    #database session
+    orderdb:
         image: mcr.microsoft.com/mssql/server:2019-latest
+        networks:
+            - learn-microservice
 
+    productdb:
+        image: mysql:8.0.33
+        networks:
+            - learn-microservice
 
+    customerdb:
+        image: postgres:15-alpine3.17
+        networks:
+            - learn-microservice
+
+    basketdb:
+        image: redis:6-alpine3.17
+        networks:
+            - learn-microservice
+
+    inventorydb:
+        image: mongo:5.0.17
+        networks:
+            - learn-microservice
+
+    #infrastructure session
+    rabbitmq:
+        image: rabbitmq:3.9.29-alpine
+        networks:
+            - learn-microservice
+
+    elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:8.7.0
+        networks:
+            - learn-microservice
+
+    kibana:
+        image: docker.elastic.co/kibana/kibana:8.7.0
+        networks:
+            - learn-microservice
+
+#network session
 networks:
-    default:
+    learn-microservice:
         name: learn-microservice
         driver: bridge
 
-
+#volumes session
 volumes:
-    sqlserver_data:
-        name: sqlserver_data
+    order_data:
+        name: order_data
+    product_data:
+        name: product_data
+    customer_data:
+        name: customer_data
+    elasticsearch_data:
+        name: elasticsearch_data
+    inventory_data:
+        name: inventory_data

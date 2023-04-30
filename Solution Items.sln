@@ -5,6 +5,7 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C65A895-4CCE-4A29-B392-36582DA77764}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		src\docker-compose.override.yml = src\docker-compose.override.yml
 		src\docker-compose.yml = src\docker-compose.yml
 		global.json = global.json
@@ -21,9 +22,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{DF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{54F514E5-9139-4527-BF73-EDFA0CE4BE54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Logging", "src\BuildingBlocks\Common.Logging\Common.Logging.csproj", "{07417B42-145C-445B-9F19-664AFFCF2028}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Logging", "src\BuildingBlocks\Common.Logging\Common.Logging.csproj", "{07417B42-145C-445B-9F19-664AFFCF2028}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "src\BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{2AA96C57-2EEB-4D94-B88B-A7A59543A248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Messages", "src\BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{2AA96C57-2EEB-4D94-B88B-A7A59543A248}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{FE531509-EA2A-444B-85A8-17ADB06181A4}"
 EndProject
@@ -37,27 +38,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inventory", "Inventory", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScheduleJob", "ScheduleJob", "{72708DD6-6D00-4C14-95B1-F71C9E3CD1EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHealthStatus", "src\WebApps\WebHealthStatus\WebHealthStatus.csproj", "{32DC677D-7961-40C3-AD94-CA95E2D307EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHealthStatus", "src\WebApps\WebHealthStatus\WebHealthStatus.csproj", "{32DC677D-7961-40C3-AD94-CA95E2D307EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.Api", "src\Services\Customer\Customer.Api\Customer.Api.csproj", "{A65B5C7C-1978-4B82-8B94-1B8E74A39781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customer.Api", "src\Services\Customer\Customer.Api\Customer.Api.csproj", "{A65B5C7C-1978-4B82-8B94-1B8E74A39781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.Api", "src\Services\Basket\Basket.Api\Basket.Api.csproj", "{4B6DE47D-5907-4B1F-9C59-35136C3AE50F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.Api", "src\Services\Basket\Basket.Api\Basket.Api.csproj", "{4B6DE47D-5907-4B1F-9C59-35136C3AE50F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Product.Api", "src\Services\Inventory\Inventory.Product.Api\Inventory.Product.Api.csproj", "{7177E254-FE99-49CE-A111-AAE031BABFDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Product.Api", "src\Services\Inventory\Inventory.Product.Api\Inventory.Product.Api.csproj", "{7177E254-FE99-49CE-A111-AAE031BABFDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Api", "src\Services\Ordering\Ordering.Api\Ordering.Api.csproj", "{0ED8A3F4-8EBA-4CB4-8DB8-3C3D97C8438B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Api", "src\Services\Ordering\Ordering.Api\Ordering.Api.csproj", "{0ED8A3F4-8EBA-4CB4-8DB8-3C3D97C8438B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Api", "src\Services\Product\Product.Api\Product.Api.csproj", "{1CB19A4D-1767-4E8E-8104-03E925688B32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Api", "src\Services\Product\Product.Api\Product.Api.csproj", "{1CB19A4D-1767-4E8E-8104-03E925688B32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.Api", "src\Services\ScheduleJob\Hangfire.Api\Hangfire.Api.csproj", "{FDB943CE-687B-412A-A492-DE5F432D064F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hangfire.Api", "src\Services\ScheduleJob\Hangfire.Api\Hangfire.Api.csproj", "{FDB943CE-687B-412A-A492-DE5F432D064F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "src\BuildingBlocks\Contracts\Contracts.csproj", "{5EEFE72F-5DF7-4A4E-B95C-6BC0B6827BEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "src\BuildingBlocks\Contracts\Contracts.csproj", "{5EEFE72F-5DF7-4A4E-B95C-6BC0B6827BEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\BuildingBlocks\Infrastructure\Infrastructure.csproj", "{B6718303-EE0A-4DAD-8340-C9F77DDFDAC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\BuildingBlocks\Infrastructure\Infrastructure.csproj", "{B6718303-EE0A-4DAD-8340-C9F77DDFDAC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\BuildingBlocks\Shared\Shared.csproj", "{D1E56B06-E1A5-4C09-AB3D-2F83C9916094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "src\BuildingBlocks\Shared\Shared.csproj", "{D1E56B06-E1A5-4C09-AB3D-2F83C9916094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGw", "src\ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{09A6E034-A433-44AA-B15B-2E1D9A0EF8C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGw", "src\ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{09A6E034-A433-44AA-B15B-2E1D9A0EF8C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
